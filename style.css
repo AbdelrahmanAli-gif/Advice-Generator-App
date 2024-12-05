@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body,
+.advice-container,
+.advice-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--darkBlue);
+}
+
+.advice-container {
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--darkGrayishBlue);
+    border-radius: 25px;
+    color: var(--lightCyan);
+    font-weight: 800;
+    font-size: 28px;
+    position: relative;
+}
+
+.advice-num {
+    color: var(--neonGreen);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+.advice-text {
+    width: 85%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.advice-btn {
+    background-color: var(--neonGreen);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -37.5px;
+    border: none;
+    outline: none;
+}
+
+.advice-btn:hover {
+    box-shadow: 0px 0px 15px 10px rgba(82, 255, 168,0.15);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.dice-img {
+    width: 45%;
+    transition: transform 1s linear;
+}
+
+@media screen and (max-width: 600px) {    
+    .divider,
+    .advice-container {
+        width: 90%;
+    }
+
+    .advice-container {
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .advice-container {
+        width: 40%;
+        height: 60%;
+    }
+
+    .divider {
+        width: 85%;
+    }
+}
