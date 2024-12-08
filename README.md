@@ -16,5 +16,6 @@ This is a simple, fun, and interactive Advice Generator App. It fetches random a
 ## Preview
 Live Demo https://abdelrahmanali-gif.github.io/Advice-Generator-App/
 
-### Challenge Link
-https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db
+### Acknowledgments
+- Challenge Link: https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db
+- Advice API powered by Advice Slip API.
